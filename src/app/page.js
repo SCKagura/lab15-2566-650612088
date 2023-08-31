@@ -71,7 +71,7 @@ const schema = z
       if (data.confirmPassword === data.password) return true;
       return false;
     },
-    { message: "PassWord does not match", path: ["confirmPassword"] }
+    { message: "Password does not match", path: ["confirmPassword"] }
   );
 
 export default function Home() {
